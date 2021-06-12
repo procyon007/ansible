@@ -1,3 +1,4 @@
+---
 - name: test
   hosts: cisco_nxos
   gather_facts: no
