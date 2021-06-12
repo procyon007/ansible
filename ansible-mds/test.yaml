@@ -5,6 +5,6 @@
   - name: Gather all legacy facts
     cisco.nxos.nxos_facts:
       gather_subset: all
-      register: result
+    register: result
   - debug:
       msg: result
