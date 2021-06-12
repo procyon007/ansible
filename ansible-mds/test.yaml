@@ -1,7 +1,7 @@
 ---
 - name: test
   hosts: cisco_nxos
-  group_vars:
+  vars_files:
     - group_vars/vars.yaml
   gather_facts: no
   tasks:
