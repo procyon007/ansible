@@ -1,3 +1,3 @@
-ansible_httpapi_port: 80
+ansible_httpapi_port: 443
 ansible_connection: "httpapi"
 ansible_network_os: "nxos"
