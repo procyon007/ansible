@@ -3,9 +3,9 @@
   hosts: cisco_nxos
   gather_facts: no
   tasks:
-  - name: test
-    cisco.nxos.nxos_facts:
-      gather_subset: all
-    register: result
-  - debug:
-      msg: result
+    - name: test
+      cisco.nxos.nxos_facts:
+        gather_subset: all
+      register: result
+    - debug:
+        msg: result
