@@ -6,7 +6,7 @@
   gather_facts: no
   tasks:
     - name: test
-      nxos_facts:
+      cisco.nxos.nxos_facts:
         gather_subset: 
         - config
       register: result
