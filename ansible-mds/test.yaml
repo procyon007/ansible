@@ -3,7 +3,7 @@
   hosts: cisco_nxos
   vars_files:
     - group_vars/vars.yaml
-  gather_facts: no
+  gather_facts: yes
   tasks:
     - name: test
       cisco.nxos.nxos_facts:
