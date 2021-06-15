@@ -1,0 +1,11 @@
+---
+- name: status test
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+  - group_vars/vars.yaml
+  tasks:
+  - name: test
+    debug:
+      msg: "{{ wwn[item.ansible-test1] }}"
+    with_items: "{{ test }}"
