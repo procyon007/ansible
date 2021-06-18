@@ -1,7 +1,7 @@
 cisco_nxos:
   hosts:
-    mds:
-      ansible_host: 64.103.37.14
+      mds:
+        ansible_host: 64.103.37.14
   vars:
     ansible_httpapi_use_ssl: yes
     ansible_httpapi_validate_certs: no
