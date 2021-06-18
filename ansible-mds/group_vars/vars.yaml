@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 cisco_nxos:
   hosts:
     mds:
@@ -10,3 +11,12 @@ cisco_nxos:
     ansible_network_os: cisco.nxos.nxos
 #ansible_user: "admin"
 #ansible_password: "Admin_1234!"
+=======
+ansible_httpapi_use_ssl: yes
+ansible_httpapi_validate_certs: no
+ansible_httpapi_port: 443
+ansible_connection: ansible.netcommon.httpapi
+ansible_network_os: cisco.nxos.nxos
+ansible_user: '{{ mds_user }}'
+ansible_password: '{{ mds_password }}'
+>>>>>>> f73a1c6656101cffc72dca609134b44a12b9deaf

@@ -1,0 +1,4 @@
+test:
+  wwn:
+    ansible-test1: 6000abc94
+
