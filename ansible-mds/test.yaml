@@ -5,11 +5,11 @@
     - group_vars/vars.yaml
   gather_facts: yes
   tasks:
-    - name: test
-      cisco.nxos.nxos_facts:
-        gather_subset: 
-        - config
-        gather_network_resources: all
-      register: result
-    - debug:
-        msg: result
+  - name: test
+    cisco.nxos.nxos_facts:
+      gather_subset: 
+      - config
+      gather_network_resources: all
+    register: result
+  - debug:
+      msg: result
