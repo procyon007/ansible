@@ -1,12 +1,14 @@
-cisco_nxos:
-  hosts:
-      mds:
-        ansible_host: 64.103.37.14
-  vars:
-    ansible_httpapi_use_ssl: yes
-    ansible_httpapi_validate_certs: no
-    ansible_httpapi_port: 443
-    ansible_connection: ansible.netcommon.httpapi
-    ansible_network_os: cisco.nxos.nxos
-    ansible_user: '{{ mds_user }}'
-    ansible_password: '{{ mds_password }}'
+all:
+  children:
+    cisco_nxos:
+      hosts:
+        mds:
+          ansible_host: 64.103.37.14
+    vars:
+      ansible_httpapi_use_ssl: yes
+      ansible_httpapi_validate_certs: no
+      ansible_httpapi_port: 443
+      ansible_connection: ansible.netcommon.httpapi
+      ansible_network_os: cisco.nxos.nxos
+      ansible_user: '{{ mds_user }}'
+      ansible_password: '{{ mds_password }}'
