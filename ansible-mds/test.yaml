@@ -1,6 +1,6 @@
 ---
 - name: test
-  hosts: cisco_nxos
+  hosts: all
   vars_files:
     - group_vars/vars.yaml
   gather_facts: yes
