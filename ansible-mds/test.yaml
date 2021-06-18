@@ -9,6 +9,3 @@
     cisco.nxos.nxos_facts:
       gather_subset: 
       - config
-    register: result
-  - debug:
-      msg: result
